@@ -72,7 +72,7 @@ using GoBlog.Models;
             WriteLiteral("        <div class=\"error\">\r\n            <h2>Uh-oh! Looks like you\'re in the wrong place.</h2>\r\n            ");
             EndContext();
             BeginContext(286, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc37c7e587c94345b6d66b58d2dfc80e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cbf08314cec546c9ad70c7371132b58e", async() => {
                 BeginContext(330, 48, true);
                 WriteLiteral("\r\n                <h2>Return?</h2>\r\n            ");
                 EndContext();

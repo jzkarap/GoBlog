@@ -12,9 +12,9 @@
     <div class="post_body">
         <p class="postedby_info">this account created on @user.AccountCreatedDate</p>
         <p class="post_text">@user.Username has created a total of @user.PostsByUser.Count posts.
-            <a id="link_to_post" asp-controller="User" asp-action="PostsByUser/@user.Username" method="get">
-                View them now?
-            </a></p>
+        <a id="link_to_post" asp-controller="User" asp-action="PostsByUser" asp-route-id="@user.Username">
+            View them now?
+        </a></p>
     </div>
 }
 </div>
