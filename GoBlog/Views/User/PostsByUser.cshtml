@@ -3,8 +3,6 @@
     ViewData["Title"] = "PostsByUser";
 }
 
-<h1 class="site_header">Posts</h1>
-
 @if (Model.Username == null)
 {
 
@@ -14,13 +12,16 @@
             <h2>Return?</h2>
         </a>
     </div>
-
 }
+else
+{
+    <h1 class="site_header">Posts by @Model.Username</h1>
 
-<p>@Model.Username</p>
+    <p>@Model.Username</p>
 
-@*@foreach(var post in Model.PostsByUser)
-    {
-        <p>@post.Body</p>
+    @foreach(var post in Model.PostsByUser)
+        {
+            <p>@post.Body</p>
 
-    }*@
+        }
+}

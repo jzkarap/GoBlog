@@ -260,3 +260,7 @@ textarea:focus {
 .submit_new_post input {
     color: none;
 }
+
+.container {
+    padding-left: 30%;
+}
