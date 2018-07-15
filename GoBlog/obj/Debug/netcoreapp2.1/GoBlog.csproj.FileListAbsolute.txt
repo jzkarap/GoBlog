@@ -29,3 +29,5 @@ C:\Users\John Karaplis\SideProjects\GoBlog\GoBlog\obj\Debug\netcoreapp2.1\GoBlog
 C:\Users\John Karaplis\SideProjects\GoBlog\GoBlog\obj\Debug\netcoreapp2.1\GoBlog.csproj.CopyComplete
 C:\Users\John Karaplis\SideProjects\GoBlog\GoBlog\obj\Debug\netcoreapp2.1\Razor\Views\Home\FullPost.g.cshtml.cs
 C:\Users\John Karaplis\SideProjects\GoBlog\GoBlog\obj\Debug\netcoreapp2.1\Razor\Views\Home\CreatePost.g.cshtml.cs
+C:\Users\John Karaplis\SideProjects\GoBlog\GoBlog\obj\Debug\netcoreapp2.1\Razor\Views\User\Index.g.cshtml.cs
+C:\Users\John Karaplis\SideProjects\GoBlog\GoBlog\obj\Debug\netcoreapp2.1\Razor\Views\User\PostsByUser.g.cshtml.cs

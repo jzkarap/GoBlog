@@ -68,7 +68,7 @@ using GoBlog.Models;
             WriteLiteral("\r\n<h1 class=\"site_header\">Posts</h1>\r\n");
             EndContext();
             BeginContext(249, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3280d289fcb94ed7affbc4a604df6be4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f38a71bf26d47f5beb3c8e95dcb5ae8", async() => {
                 BeginContext(311, 42, true);
                 WriteLiteral("\r\n    <h4 class=\"new_post\">new post</h4>\r\n");
                 EndContext();
@@ -120,7 +120,7 @@ using GoBlog.Models;
             WriteLiteral("        ");
             EndContext();
             BeginContext(723, 155, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5873c13160c47888688d3355489cc81", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9ee086e04b94d0193faac933ec405cd", async() => {
                 BeginContext(810, 38, true);
                 WriteLiteral("\r\n            <h2 class=\"post_header\">");
                 EndContext();
@@ -164,7 +164,7 @@ using GoBlog.Models;
             WriteLiteral("\r\n        <div class=\"post_body\">\r\n            ");
             EndContext();
             BeginContext(925, 812, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36245628830f4145883fd8c9edbfe4b8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c64a253591254ac08a54c5840ad99e9f", async() => {
                 BeginContext(1012, 50, true);
                 WriteLiteral("\r\n                <p class=\"postedby_info\">posted ");
                 EndContext();

@@ -1,0 +1,18 @@
+﻿@model IList<User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Users</h2>
+
+<div class="post">
+@foreach (var user in Model)
+{
+    <h2 class="post_header">@user.Username</h2>
+    <div class="post_body">
+        <p class="postedby_info">this account created on @user.AccountCreatedDate</p>
+        <p class="post_text">@user.Username has created a total of @user.PostsByUser.Count posts.
+            <a asp-controller="User" asp-action="PostsByUser/@user.Username.ToString()" method="get">View them now?</a></p>
+    </div>
+}
+</div>

@@ -17,7 +17,7 @@ GO
 
 create table users
 (
-	username varchar(30) not null,
+	username varchar(30) not null UNIQUE,
 	date_joined datetime DEFAULT(getdate()),
 
 	constraint pk_username PRIMARY KEY (username)

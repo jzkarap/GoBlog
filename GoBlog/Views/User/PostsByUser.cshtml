@@ -1,0 +1,26 @@
+﻿@model User
+@{
+    ViewData["Title"] = "PostsByUser";
+}
+
+<h1 class="site_header">Posts</h1>
+
+@if (Model.Username == null)
+{
+
+    <div class="error">
+        <h2>Uh-oh! Looks like you're in the wrong place.</h2>
+        <a asp-controller="User" asp-action="Index">
+            <h2>Return?</h2>
+        </a>
+    </div>
+
+}
+
+<p>@Model.Username</p>
+
+@*@foreach(var post in Model.PostsByUser)
+    {
+        <p>@post.Body</p>
+
+    }*@
