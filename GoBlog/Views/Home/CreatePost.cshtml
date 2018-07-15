@@ -1,0 +1,38 @@
+﻿@model Post
+@{
+    ViewData["Title"] = "CreatePost";
+    string username = "";
+}
+<form asp-controller="Home" asp-action="CreatePost" method="post">
+    <div class="post">
+            <input type="submit" class="submit_new_post" value="Create Post" />
+    </div>
+
+    <div class="new_post_field">
+        <div class="new_post_element">
+            <label asp-for="Username"></label>
+            <input asp-for="Username" />
+            <span asp-validation-for="Username"></span>
+        </div>
+
+
+        <div class="new_post_element">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+            <span asp-validation-for="Title"></span>
+        </div>
+
+        <div class="new_post_element">
+            <label asp-for="Tags"></label>
+            <input asp-for="Tags" />
+            <span asp-validation-for="Tags"></span>
+        </div>
+
+        <div class="body_element">
+            <label asp-for="Body"></label>
+            <textarea class="body_field" asp-for="Body"></textarea>
+            <span asp-validation-for="Body"></span>
+        </div>
+    </div>
+
+</form>

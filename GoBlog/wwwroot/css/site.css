@@ -1,0 +1,262 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+body {
+    background-color: #57677f;
+}
+
+.site_header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: #d6e5fc;
+    text-shadow: 2px 2px 8px rgba(82,83,84,1);
+}
+
+hr {
+    border-color: #d6e5fc;
+    background-color: #d6e5fc;
+    height: 2px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.post_header {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #d6e5fc;
+    color: #57677f;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 200px;
+    text-align: center;
+    padding-top: .5%;
+    box-shadow: 2px 2px 4px 2px rgba(82,83,84,1);
+}
+
+
+.post_header:hover {
+       padding-top: -1%;
+       font-weight: 600;
+       text-shadow: .5px .5px 4px rgba(82,83,84,1);
+}
+
+.post {
+    padding: 0 2%;
+}
+
+.post_body {
+    padding: 0 2% .6%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #dae4ef;
+    margin: .5% 2%;
+    border-radius: 10px;
+    color: #57677f;
+    box-shadow: 4px 4px 8px 3px rgba(82,83,84,1);
+}
+
+    .post_body a {
+        color: #57677f;
+    }
+
+.postedby_info {
+    padding-top: .5%;
+    font-size: .7em;
+}
+
+.post_text {
+    font-size: 1.3em;
+}
+
+.copyright {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #d6e5fc;
+}
+
+.tags {
+    font-size: .7em;
+    display: inline;
+}
+
+.tag_block:before {
+    display: block;
+    content: " ";
+    border: .5px solid #57677f;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    max-width: 100px;
+}
+
+.tag_block {
+    display: block;
+}
+
+#link_to_post:hover {
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: .5px .5px 4px rgba(82,83,84,1);
+}
+
+.error {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #d6e5fc;
+    color: #57677f;
+    border-radius: 10px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 4px 2px rgba(82,83,84,1);
+    margin: 3% auto;
+    width: 30%;
+    padding: 1%;
+}
+
+    .error a:hover {
+        text-decoration: none;
+        font-weight: 600;
+        text-shadow: .5px .5px 4px rgba(82,83,84,1);
+    }
+
+.full_post_header {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #d6e5fc;
+    color: #57677f;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 200px;
+    text-align: center;
+    padding-top: .5%;
+    box-shadow: 2px 2px 4px 2px rgba(82,83,84,1);
+}
+
+.new_post {
+    font-size: 1em;
+    background-color: #dae4ef;
+    border-radius: 10px;
+    width: 10%;
+    min-width: 10%;
+    text-align: center;
+    padding: .5%;
+    color: #57677f;
+    display: block;
+    float: right;
+    margin-top: -5%;
+    margin-right: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 2px 2px 4px 2px rgba(82,83,84,1);
+}
+
+    .new_post:hover {
+        text-decoration: none;
+        font-weight: 600;
+        text-shadow: .5px .5px 4px rgba(82,83,84,1);
+    }
+
+.new_post_field {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #57677f;
+}
+
+.body_field {
+    width: 100%;
+    height: 300px;
+}
+
+.new_post_field * {
+    display: block;
+    padding-top: .2%;
+    border-radius: 10px;
+    margin: 0 1.4%;
+}
+
+.new_post_element {
+    float: left;
+    padding-left: 2%;
+    margin-bottom: 1%;
+}
+
+.new_post_field label {
+    padding-left: 5%;
+    color: #d6e5fc;
+}
+
+.new_post_field input {
+    padding-top: 3%;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 4px rgb(43, 113, 226);
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 4px rgb(43, 113, 226);
+}
+
+.body_element {
+   clear: left;
+}
+
+.body_element label {
+   margin-left: -2%;
+}
+
+.submit_new_post {
+    margin-top: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    background-color: #d6e5fc;
+    color: #57677f;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 200px;
+    text-align: center;
+    padding-top: .5%;
+    box-shadow: 2px 2px 4px 2px rgba(82,83,84,1);
+}
+
+.submit_new_post:hover {
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: .5px .5px 4px rgba(82,83,84,1);
+}
+
+.submit_new_post input {
+    color: none;
+}

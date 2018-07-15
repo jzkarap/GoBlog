@@ -1,0 +1,48 @@
+﻿@model Post
+@{
+    ViewData["Title"] = "FullPost";
+    string lastTag = Model.Tags[Model.Tags.Count - 1];
+}
+
+<div class="post">
+    @if (Model.Username == null)
+    {
+
+        <div class="error">
+            <h2>Uh-oh! Looks like you're in the wrong place.</h2>
+            <a asp-controller="Home" asp-action="Index">
+                <h2>Return?</h2>
+            </a>
+        </div>
+
+    }
+    else
+    {
+        string postDate = Model.DatePosted[0];
+        string postTime = Model.DatePosted[1];
+
+        <h2 class="full_post_header">@Model.Title</h2>
+
+        <div class="post_body">
+            <p class="postedby_info">posted @postDate at @postTime by @Model.Username</p>
+            <p class="post_text">@Model.Body</p>
+
+            <div class="tag_block">
+                <p class="tags"><strong>tags:</strong></p>
+                <!-- We check each tag to see if is the last tag;
+                if so, it gets no comma -->
+                @foreach (var tag in Model.Tags)
+                {
+                    if (tag != lastTag)
+                    {
+                        <p class="tags">@tag,</p>
+                    }
+                    else
+                    {
+                        <p class="tags">@tag</p>
+                    }
+                }
+            </div>
+        </div>
+    }
+</div>

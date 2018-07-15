@@ -1,0 +1,64 @@
+﻿@model IList<Post>
+@{
+    ViewData["Title"] = "Home Page";
+    string lastTag = "";
+    string truncatedBody = "";
+    string postDate = "";
+    string postTime = "";
+    int postPreviewLength = 300;
+}
+
+<h1 class="site_header">Posts</h1>
+<a asp-controller="Home" asp-action="CreatePost" method="get">
+    <h4 class="new_post">new post</h4>
+</a>
+
+<div class="post">
+    @foreach (var post in Model)
+    {
+        <!-- Get the last tag for comparison later (used for comma separation) -->
+        lastTag = post.Tags[post.Tags.Count - 1];
+        <!-- Assign date and time to variables (for human readability) -->
+        postDate = post.DatePosted[0];
+        postTime = post.DatePosted[1];
+
+        <a id="link_to_post" asp-controller="Home" asp-action="FullPost/@post.ID" method="get">
+            <h2 class="post_header">@post.Title</h2>
+        </a>
+        <div class="post_body">
+            <a id="link_to_post" asp-controller="Home" asp-action="FullPost/@post.ID" method="get">
+                <p class="postedby_info">posted @postDate at @postTime by @post.Username</p>
+
+                <!-- Check length of post;
+                if greater than 300 characters, truncate and append ellipsis -->
+                @if (post.Body.Length > postPreviewLength)
+                {
+                    <!-- Our truncatedBody text is everything up to character 300 in the original body, followed by "..." -->
+                    truncatedBody = post.Body.Remove(postPreviewLength) + "...";
+                    <p class="post_text">@truncatedBody</p>
+                }
+                else
+                {
+                    <p class="post_text">@post.Body</p>
+                }
+            </a>
+
+            <div class="tag_block">
+                <p class="tags"><strong>tags:</strong></p>
+                <!-- We check each tag to see if is the last tag;
+                if so, it gets no comma -->
+                @foreach (var tag in post.Tags)
+                {
+                    if (tag != lastTag)
+                    {
+                        <p class="tags">@tag,</p>
+                    }
+                    else
+                    {
+                        <p class="tags">@tag</p>
+                    }
+                }
+            </div>
+        </div>
+    }
+</div>
