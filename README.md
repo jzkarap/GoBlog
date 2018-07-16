@@ -1,7 +1,7 @@
 # GoBlog
 
 CURRENTLY
-GoBlog includes a script that will build an initial database, using sql.
+GoBlog includes a script that will build an initial database, using sql. It is a blogging website built using ASP.NET Core.
 
 Users can view posts (most to least recent), in an index view which truncates posts over 300 characters in length,
 or view full-length posts in a single-post view. Posts include a title, a date created, a creator, a body of text, and a number of associated tags.
