@@ -19,7 +19,7 @@ FUTURE ADDITIONS:
 - create new account
   > add password field to database, salted password hashing
   
-  > use cloudinary API to host avatar images for users (storing URL to image in database
+  > use cloudinary API to host avatar images for users (storing URL to image in database)
   
   > create page which allows users to report inappropriate behavior or content
 - allow user to remain logged in while in session
