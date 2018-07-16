@@ -8,7 +8,7 @@ or view full-length posts in a single-post view.
 
 Users can view all current accounts in database, along with post counts, and can view all posts by user.
 
-Users can create new posts (if using an existing username), which will added correctly to database and included in all future queries.
+Users can create new posts (if using an existing username), which will be added correctly to database and included in all future queries.
 
 
 TO ADD:
