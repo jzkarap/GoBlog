@@ -4,7 +4,7 @@ CURRENTLY
 GoBlog includes a script that will build an initial database, using sql.
 
 Users can view posts (most to least recent), in an index view which truncates posts over 300 characters in length,
-or view full-length posts in a single-post view.
+or view full-length posts in a single-post view. Posts include a title, a date created, a creator, a body of text, and a number of associated tags.
 
 Users can view all current accounts in database, along with post counts, and can view all posts by user.
 
