@@ -11,7 +11,7 @@ Users can view all current accounts in database, along with post counts, and can
 Users can create new posts (if using an existing username), which will be added correctly to database and included in all future queries.
 
 
-TO ADD:
+FUTURE ADDITIONS:
 - search by tag
 - create new tags (implicitly/explicitly)
 - search by date created
