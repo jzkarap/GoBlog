@@ -1,5 +1,16 @@
 # GoBlog
 
+CURRENTLY
+GoBlog includes a script that will build an initial database, using sql.
+
+Users can view posts (most to least recent), in an index view which truncates posts over 300 characters in length,
+or view full-length posts in a single-post view.
+
+Users can view all current accounts in database, along with post counts, and can view all posts by user.
+
+Users can create new posts (if using an existing username), which will added correctly to database and included in all future queries.
+
+
 TO ADD:
 - search by tag
 - create new tags (implicitly/explicitly)
