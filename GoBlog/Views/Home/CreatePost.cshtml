@@ -1,8 +1,8 @@
 ﻿@model Post
 @{
     ViewData["Title"] = "CreatePost";
-    string username = "";
 }
+
 <form asp-controller="Home" asp-action="CreatePost" method="post">
     <div class="post">
             <input type="submit" class="submit_new_post" value="Create Post" />
@@ -14,7 +14,6 @@
             <input asp-for="Username" />
             <span asp-validation-for="Username"></span>
         </div>
-
 
         <div class="new_post_element">
             <label asp-for="Title"></label>

@@ -24,7 +24,12 @@
         <h2 class="full_post_header">@Model.Title</h2>
 
         <div class="post_body">
-            <p class="postedby_info">posted @postDate at @postTime by @Model.Username</p>
+            <p class="postedby_info">
+                posted @postDate at @postTime by
+                <a id="link_to_post" asp-controller="User" asp-action="PostsByUser/@Model.Username">
+                    @Model.Username
+                </a>
+            </p>
             <p class="post_text">@Model.Body</p>
 
             <div class="tag_block">

@@ -111,7 +111,7 @@ using GoBlog.Models;
             WriteLiteral(" posts.\r\n        ");
             EndContext();
             BeginContext(426, 140, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac1cdece621e4d85a0ed9e852c405056", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d355d1f5d86c4404bfc63774fb49d079", async() => {
                 BeginContext(524, 38, true);
                 WriteLiteral("\r\n            View them now?\r\n        ");
                 EndContext();

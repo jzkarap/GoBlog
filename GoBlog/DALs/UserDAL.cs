@@ -14,6 +14,10 @@ namespace GoBlog.DALs
 		public UserDAL()
 		{ }
 
+		/// <summary>
+		/// Gets a list of users
+		/// </summary>
+		/// <returns> An IList of User objects built from GoBlog database </returns>
 		public IList<User> GetAllUsers()
 		{
 			List<User> allUsers = new List<User>();
@@ -26,7 +30,7 @@ namespace GoBlog.DALs
 					// Open the connection
 					conn.Open();
 
-					// Select all posts
+					// Select all users
 					string sql = "SELECT * FROM users " +
 									"ORDER BY username Desc;";
 
@@ -76,6 +80,11 @@ namespace GoBlog.DALs
 			return allUsers;
 		}
 
+		/// <summary>
+		/// Returns single user
+		/// </summary>
+		/// <param name="username"> The username of desired user </param>
+		/// <returns> A User object built from GoBlog database </returns>
 		public User GetUser(string username)
 		{
 			if (username == null)
@@ -93,7 +102,6 @@ namespace GoBlog.DALs
 					// Open the connection
 					conn.Open();
 
-					// Select all posts
 					string sql = "SELECT * FROM users " +
 									"WHERE username = @username;";
 

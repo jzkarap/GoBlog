@@ -21,9 +21,9 @@ namespace GoBlog.Controllers
 
 		[HttpGet]
 		//[Route("PostsByUser/{name}")]
-		public IActionResult PostsByUser(string name)
+		public IActionResult PostsByUser(string id)
 		{
-			User user = userDAL.GetUser(name);
+			User user = userDAL.GetUser(id);
 
 			return View(user);
 		}
